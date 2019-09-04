@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script pre setup - Vikas N, Aug 2019
+set +x # debug
+
+echo "Pre setup .."
+export PYTHONPATH=$PYTHONPATH:$(pwd):$(pwd)/../logic:$(pwd)/..
+
+echo "running test suit"
+cd ..
+python -m unittest discover

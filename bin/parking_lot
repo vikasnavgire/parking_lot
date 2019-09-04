@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script to start application - Vikas N, Aug 2019
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+export PYTHONPATH=$PYTHONPATH:$DIR:$DIR/../logic
+python3 $DIR/../logic/main.py $1
